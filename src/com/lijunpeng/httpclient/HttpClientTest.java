@@ -36,7 +36,12 @@ public class HttpClientTest {
 											.setSocketTimeout(2000)
 											.setConnectionRequestTimeout(1000)
 											.build();
-			return HttpClients.createDefault();
+			return HttpClients.custom()
+								.setMaxConnPerRoute(64)
+								.setMaxConnTotal(512)
+								.setDefaultRequestConfig(requestConfig)
+								.setDefaultConnectionConfig(config)
+								.build();
 		}
 		return httpClient;
 	}
