@@ -1,4 +1,4 @@
-package com.lijunpeng.List;
+package com.lijunpeng.datastructure.List;
 
 import java.util.ArrayList;
 import java.util.List;
