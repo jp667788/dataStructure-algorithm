@@ -1,4 +1,4 @@
-package com.lijunpeng.sort;
+package com.lijunpeng.algorithms.sort;
 import java.util.Arrays;
 
 /**
